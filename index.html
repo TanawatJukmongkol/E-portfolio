@@ -1,0 +1,261 @@
+<!--
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    index.html                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tjukmong <tjukmong@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/10/09 14:11:13 by tjukmong          #+#    #+#              #
+#    Updated: 2022/10/09 14:11:13 by tjukmong         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>tjukmong - Discovery 42</title>
+	<link href="./css/normalize.min.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/responsive.css" rel="stylesheet">
+	<script src="./js/main.js" defer></script>
+</head>
+<body>
+	<nav>
+		<div id="progress-bar"></div>
+		<ul class="desktop">
+			<li><a href="#lnk-00">Home</a></li>
+			<li><a href="#lnk-01">About me</a></li>
+			<li><a href="#lnk-02">Skills</a></li>
+			<li><a href="#lnk-03">Resume</a></li>
+			<li><a href="#lnk-04">Gallery</a></li>
+			<li><a href="#lnk-05">Contact</a></li>
+		</ul>
+		<ul class="mobile" id="nav-menu-btn">
+			<a href="javascript:void(0);" class="icon" style="width: 2.5rem;font-size:1.52rem;text-align:center;"></a>
+		</ul>
+	</nav>
+	<nav class="mobile menu" id="nav-menu-lst">
+		<ul>
+			<li><a href="#lnk-00">Home</a></li>
+			<li><a href="#lnk-01">About me</a></li>
+			<li><a href="#lnk-02">Skills</a></li>
+			<li><a href="#lnk-03">Resume</a></li>
+			<li><a href="#lnk-04">Gallery</a></li>
+			<li><a href="#lnk-05">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="loading-screen">
+		<h1>Loading...</h1>
+	</div>
+	<div class="main-content-container">
+		<h1 id="lnk-00">Home</h1>
+		<p>
+			<code>$ echo "Hello, world!"</code>
+			<article>
+				<p>
+					Welcome to my homepage and to 42! This is an example of
+					the rush project! The project has to be written from scratch
+					and is allowed to use CSS framework, and JS libaray (no JS
+					framework are allowed!). This site was written in
+					CSS, and HTML, and pure JS (using the Normalize.css framework)!
+				</p>
+			</article>
+		</p>
+		<h2 id="lnk-01">About me</h2>
+		<p>
+			<code>$ whoami</code>
+			<div class="triangle-container">
+				<div class="profile"></div>
+				<div class="triangle-fragment"></div>
+			</div>
+			<article>
+				<p>
+					I'm a self-taught hobbyist programmer, and a Linux enthusiast.
+					I started learning Processing.js (similar to Three.js, but made
+					by the MIT), and web development on Khan Academy when I was around
+					7 years old.
+				</p>
+			</article>
+		</p>
+		<h2 id="lnk-02">Skills</h2>
+		<p>
+			<code>$ cat /proc/stat</code>
+			<p>Programming languages</p>
+			<table>
+				<tr><td>JS</td><td><span class="skill-bar" style="--level:64%"></span>
+					64%
+				</td></tr>
+				<tr><td>HTML</td> <td><span class="skill-bar" style="--level:45%"></span>
+					45%
+				</td></tr>
+				<tr><td>CSS</td> <td><span class="skill-bar" style="--level: 35%"></span>
+					35%
+				</td></tr>
+				<tr><td>C</td> <td><span class="skill-bar" style="--level:42%"></span>
+					42%
+				</td></tr>
+				<tr><td>LUA</td> <td><span class="skill-bar" style="--level:14%"></span>
+					14%
+				</td></tr>
+			</table>
+			<p>Learning in progress</p>
+			<table>
+				<tr><td>RUST 🦀🦀</td> <td><span class="skill-bar in-progress" style="--level:6%"></span>
+					6%
+				</td></tr>
+				<tr><td>Arduino</td> <td><span class="skill-bar in-progress" style="--level:5%"></span>
+					5%
+				</td></tr>
+				<tr><td>BBCMicrobit.c</td> <td><span class="skill-bar in-progress" style="--level:2%"></span>
+					2%
+				</td></tr>
+			</table>
+		</p>
+		<h2 id="lnk-03">Resume</h2>
+		<div class="window-wrapper">
+			<div class="title-bar">
+				<span>Terminal - /usr/bin/zsh</span>
+				<ul>
+					<li style="background-color: var(--win-btn1);"></li>
+					<li style="background-color: var(--win-btn2);"></li>
+					<li style="background-color: var(--win-btn3);"></li>
+				</ul>
+			</div>
+			<div class="term-wrapper">
+				<div class="term-content">
+					<span class="powerline-10k">    ~/Desktop </span> cat "International school"
+					<pre> Meta International school </pre>
+					<p>
+						At the age of 3, I started off at Meta
+						international school. I learnt in 3 languages;
+						English, Thai, and Chinese. No programming, yet. :(
+					</p>
+					<span class="powerline-10k">    ~ </span> cat "Homeschool"
+					<pre> Children's Village (Moo Baan Dek) learning center, Kanchanaburi </pre>
+					<p>
+						I've been learning at home since elementary school, and I started
+						my programming carear at the age of 7. I got to know programming,
+						through Processing.js playground at Khan Academy. I got addicted,
+						and then I just selftaught myself programming, ever since. 
+					</p>
+					<span class="powerline-10k">    ~/Public </span> cat "Nakprasith school"
+					<pre> I've got curious, so that's why. </pre>
+					<p>
+						I got into Nakprasith school, at grade 7 - 10 out of curiousity.
+						Nothing much. My computer science teacher taught me about Operating
+						systems, and I've got introduced to Linux. 
+					</p>
+					<span class="powerline-10k">    ~/Templates </span> cat "Bangkok 42"
+					<pre> 42 Bangkok! </pre>
+					<p>
+						Though, the "class" is a bit tough, I still love this place! 42 is a
+						very welcoming place, and a loving second family for everyone.
+					</p>
+					<span class="powerline-10k">    ~ </span> echo "coming soon..."
+				</div>
+			</div>
+		</div>
+		<h2 id="lnk-04">Gallery</h2>
+		<p>
+			<code>$ feh /Pictures/Gallery</code>
+			<div class="gallery">
+				<div class="figure">
+					<img src="./assets/portfolio/project-conky.png">
+					<p>
+						My first custom Linux system monitor widget written in Lua.
+					</p>
+					<div class="icons">
+						<a href="https://github.com/TanawatJukmongkol/conky-rice" class="icon link-icon"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="./assets/portfolio/intra-profile-42.png">
+					<p>
+						My 42BKK intra profile.
+					</p>
+					<div class="icons">
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="./assets/portfolio/c-piscine-progress.png">
+					<p>
+						C piscine bootcamp progress.
+					</p>
+					<div class="icons">
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="./assets/portfolio/c-piscine-batch-6.jpg">
+					<p>
+						C piscine batch 6 closing ceremony!
+					</p>
+					<div class="icons">
+						<a href="https://www.facebook.com/100968571487371/posts/pfbid02oZC5D5rpuEDopBwT1KRh47jVRZMfGXwzrYBgsx9SDPjSX2vwcmuUTCnQujiYV9mFl" class="icon link-icon"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="./assets/portfolio/birthday-card-for-my-friend.png">
+					<p>
+						A birthday card for my friend! Written in Processing.js, HTML, and CSS from scratch!
+					</p>
+					<div class="icons">
+						<a href="https://tanawatjukmongkol.github.io/example_site/" class="icon link-icon"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="./assets/portfolio/libft.png">
+					<p>
+						My standard C libaray + 42's exclusive functions from scratch!
+					</p>
+					<div class="icons">
+						<a href="https://gitlab.com/TanawatJukmongkol/libft" class="icon link-icon"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+			</div>
+		</p>
+		<h2 id="lnk-05">Contact</h2>
+		<code>$ mail -s "Mail me!"</code>
+		<p class="desktop">
+			<ul class="desktop contact">
+				<li>
+					<a href="tel:+0623406998" class="icon icon-large"></a>
+					&emsp;
+					<code>+66 062-340-6998</code>
+				</li>
+				<li>
+					<a href="mailto:tanawat.jukmon@gmail.com" class="icon icon-large"></a>
+					&emsp;
+					<code>Tanawat.jukmon@gmail.com</code>
+				</li>
+				<li>
+					<a href="https://github.com/TanawatJukmongkol" class="icon icon-large"></a>
+					&emsp;
+					<code>https://github.com/TanawatJukmongkol</code>
+				</li>
+				<li>
+					<a href="https://gitlab.com/TanawatJukmongkol" class="icon icon-large"></a>
+					&emsp;
+					<code>https://gitlab.com/TanawatJukmongkol</code>
+				</li>
+			</ul>
+		</p>
+		<p class="mobile contact">
+			<a href="tel:+0623406998" class="icon icon-large"></a>
+			<a href="mailto:tanawat.jukmon@gmail.com" class="icon icon-large"></a>
+			<a href="https://github.com/TanawatJukmongkol" class="icon icon-large"></a>
+			<a href="https://gitlab.com/TanawatJukmongkol" class="icon icon-large"></a>
+		</p>
+	</div>
+</body>
+</html>

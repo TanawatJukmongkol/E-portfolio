@@ -1,0 +1,48 @@
+
+:root {
+	--bkg-body: url("./../assets/pexels-pixabay-206359.jpg");
+	--bkg-color1: #d3d3d3d8;
+	--bkg-color2: #e9e9e9e5;
+	--bkg-color3: #e2e2e269;
+	--bkg-nav: #ffffffbe;
+
+	--accent1: #9bfdeda9;
+
+	--border-color1: #f3f3f38e;
+
+	--txt-color1: #2b2e31;
+	--txt-color2: #36373b;
+
+	--link-color1: #333333;
+	--link-color2: #757575;
+
+	--bkg-scroll:	#bebebe4f;
+	--thumb-scroll:	#bdbdbd8a;
+	--hov-scroll:	#acacacb7;
+
+	--skill-bkg:	#f2fff58c;
+	--skill-fore:	#000e079d;
+}
+
+.editor-wrapper, .title-bar, .window-wrapper {
+	--bkg-color1:	#b6b6b6;
+	--bkg-color2:	#e0e0e0;
+	--bkg-color3:	#d6d6d6;
+	--bkg-color4:	#e9e9e9;
+
+	--shadow-color1:	#00000048;
+
+	--txt-color1:	#535353;
+	--txt-color2:	#363636;
+
+	--link-color1:	#aaaaaa75;
+	--link-color2:	#6cafaf;
+
+	--win-btn1:		rgb(248, 215, 31);
+	--win-btn2:		rgb(99, 180, 24);
+	--win-btn3:		rgb(223, 104, 104);
+
+	--bkg-scroll:	#bebebe4f;
+	--thumb-scroll:	#bdbdbd8a;
+	--hov-scroll:	#acacacb7;
+}
