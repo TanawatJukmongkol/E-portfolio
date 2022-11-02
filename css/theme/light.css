@@ -6,7 +6,7 @@
 	--bkg-color3: #f0f0f069;
 	--bkg-nav: #ffffffbe;
 
-	--accent1: rgba(65, 147, 161, 0.726);
+	--accent1: #4193a1b9;
 
 	--border-color1: #f3f3f38e;
 
@@ -16,14 +16,14 @@
 	--link-color1: #333333;
 	--link-color2: #757575;
 
-	--bkg-scroll:	#bebebe4f;
-	--thumb-scroll:	#bdbdbd8a;
-	--hov-scroll:	#acacacb7;
+	--bkg-scroll:	#6e6e6e4f;
+	--thumb-scroll:	#1818188a;
+	--hov-scroll:	#292929cc;
 
 	--skill-bkg:	#f2fff58c;
 	--skill-fore:	#000e079d;
 
-	--shadow-color1:	#424242b0;
+	--shadow-color1:	#ffffffb0;
 }
 
 .editor-wrapper, .title-bar, .window-wrapper {
