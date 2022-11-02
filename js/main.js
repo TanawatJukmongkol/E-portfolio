@@ -4,6 +4,8 @@ let nav_lst = document.getElementById("nav-menu-lst");
 let main_content_container = document.getElementsByClassName("main-content-container")[0];
 let progress_bar = document.getElementById("progress-bar");
 let zoom_icons = document.getElementsByClassName("zoom-icon");
+let theme_toggle = document.getElementById("theme-toggle");
+let theme_css = document.getElementById("theme-css");
 
 // Menu handeling
 
@@ -24,6 +26,31 @@ nav_lst.childNodes.forEach(function(el) {
 		nav_lst.style.display = "none";
 	})
 })
+
+function set_theme (name) {
+	if (name == "light")
+		theme_toggle.children[0].innerHTML = "滛";
+	else if (name == "dark")
+		theme_toggle.children[0].innerHTML = "";
+	else
+		return;
+	theme_css.href = `./css/theme/${name}.css`;
+}
+
+if (localStorage.getItem("theme") == "light")
+	set_theme("light");
+
+theme_toggle.addEventListener("click", function () {
+	if (localStorage.getItem("theme") != "light")
+	{
+		localStorage.setItem("theme", "light");
+		set_theme("light");
+		return;
+	}
+	localStorage.setItem('theme', 'dark');
+	set_theme("dark");
+});
+
 
 window.addEventListener("load", function() {
 	loading_screen.style.opacity = 0;

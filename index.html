@@ -21,12 +21,19 @@
 	<title>tjukmong - Discovery 42</title>
 	<link href="./css/normalize.min.css" rel="stylesheet">
 	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/theme/dark.css" rel="stylesheet" id="theme-css">
 	<link href="./css/responsive.css" rel="stylesheet">
 	<script src="./js/main.js" defer></script>
 </head>
 <body>
 	<nav>
 		<div id="progress-bar"></div>
+		<ul class="mobile" id="nav-menu-btn">
+			<a href="javascript:void(0);" class="icon icon-large" style="padding:.8rem;"></a>
+		</ul>
+		<ul id="theme-toggle">
+			<a href="javascript:void(0);" class="icon icon-large" style="padding:.8rem;"></a>
+		</ul>
 		<ul class="desktop">
 			<li><a href="#lnk-00">Home</a></li>
 			<li><a href="#lnk-01">About me</a></li>
@@ -34,9 +41,6 @@
 			<li><a href="#lnk-03">Resume</a></li>
 			<li><a href="#lnk-04">Gallery</a></li>
 			<li><a href="#lnk-05">Contact</a></li>
-		</ul>
-		<ul class="mobile" id="nav-menu-btn">
-			<a href="javascript:void(0);" class="icon" style="width: 2.5rem;font-size:1.52rem;text-align:center;"></a>
 		</ul>
 	</nav>
 	<nav class="mobile menu" id="nav-menu-lst">
@@ -58,10 +62,11 @@
 			<code>$ echo "Hello, world!"</code>
 			<article>
 				<p>
-					Welcome to my homepage and to 42! This is an example of
-					the rush project! The project allows the use of CSS framework,
-					and JS libaray (no JS framework are allowed!). This site was written in
-					CSS (with Normalize.css framework), HTML, and pure JS from scratch!
+					Hi! I'm Tanawat Jukmongkol (ธนวัฒน์ จุกมงคล), and welcome to my E-portfolio!
+					<!-- This is an example of the "rush project", a DIY E-portfolio! The project
+					allows the use of CSS framework, and JS libaray (no JS framework are allowed!).
+					This site was written in CSS (with Normalize.css framework), HTML, and pure
+					JS from scratch! -->
 				</p>
 			</article>
 		</p>
@@ -77,7 +82,7 @@
 					I'm a self-taught hobbyist programmer, and a Linux enthusiast.
 					I started learning Processing.js (similar to Three.js, but made
 					by the MIT), and web development on Khan Academy when I was around
-					7 years old.
+					7 years old. I'm also intrested in Robotics, and AI!
 				</p>
 			</article>
 		</p>
@@ -131,23 +136,26 @@
 					<pre> Meta International school </pre>
 					<p>
 						At the age of 3, I started off at Meta
-						international school. I learnt in 3 languages;
-						English, Thai, and Chinese. No programming, yet. :(
+						international school. <mark>I learnt in 3 languages;
+						English, Thai, and Chinese.</mark> No programming, yet. :(
 					</p>
 					<span class="powerline-10k">    ~ </span> cat "Homeschool"
 					<pre> Children's Village (Moo Baan Dek) learning center, Kanchanaburi </pre>
 					<p>
-						I've been learning at home since elementary school, and I started
-						my programming carear at the age of 7. I got to know programming,
+						I've been learning at home since elementary school, and <mark>I started
+						my programming carear at the age of 7</mark>. I got to know programming,
 						through Processing.js playground at Khan Academy. I got addicted,
-						and then I just selftaught myself programming, ever since. 
+						and then I just <mark>selftaught programming</mark>, ever since.
 					</p>
 					<span class="powerline-10k">    ~/Public </span> cat "Nakprasith school"
 					<pre> I've got curious, so that's why. </pre>
 					<p>
 						I got into Nakprasith school, at grade 7 - 10 out of curiousity.
 						Nothing much. My computer science teacher taught me about Operating
-						systems, and I've got introduced to Linux. 
+						systems, and I've got introduced to Linux. I of course looked further
+						into it, and fell in love with it. <mark>At the age of 15, I selftaught the
+						basic bash scripting</mark>, and then, <mark>I installed my first Linux
+						(ParrotOS) on a 32Gb bootable flash drive.</mark>
 					</p>
 					<span class="powerline-10k">    ~/Templates </span> cat "Bangkok 42"
 					<pre> 42 Bangkok! </pre>
@@ -161,18 +169,8 @@
 		</div>
 		<h2 id="lnk-04">Gallery</h2>
 		<p>
-			<code>$ feh /Pictures/Gallery</code>
+			<code>$ feh /Pictures/42</code>
 			<div class="gallery">
-				<div class="figure">
-					<img src="./assets/portfolio/project-conky.png">
-					<p>
-						My first custom Linux system monitor widget written in Lua.
-					</p>
-					<div class="icons">
-						<a href="https://github.com/TanawatJukmongkol/conky-rice" class="icon link-icon" target="_blank"></a>
-						<a href="javascript:void(0);" class="icon zoom-icon"></a>
-					</div>
-				</div>
 				<div class="figure">
 					<img src="./assets/portfolio/intra-profile-42.png">
 					<p>
@@ -202,22 +200,27 @@
 					</div>
 				</div>
 				<div class="figure">
-					<img src="./assets/portfolio/birthday-card-for-my-friend.png">
-					<p>
-						A birthday card for my friend! Written in Processing.js, HTML, and CSS from scratch!
-					</p>
-					<div class="icons">
-						<a href="https://tanawatjukmongkol.github.io/example_site/" class="icon link-icon" target="_blank"></a>
-						<a href="javascript:void(0);" class="icon zoom-icon"></a>
-					</div>
-				</div>
-				<div class="figure">
 					<img src="./assets/portfolio/libft.png">
 					<p>
 						My standard C libaray + 42's exclusive functions from scratch!
 					</p>
 					<div class="icons">
 						<a href="https://gitlab.com/TanawatJukmongkol/libft" class="icon link-icon" target="_blank"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+			</div>
+		</p>
+		<p>
+			<code>$ feh /Pictures/Projects</code>
+			<div class="gallery">
+				<div class="figure">
+					<img src="./assets/portfolio/project-conky.png">
+					<p>
+						My first custom Linux system monitor widget written in Lua.
+					</p>
+					<div class="icons">
+						<a href="https://github.com/TanawatJukmongkol/conky-rice" class="icon link-icon" target="_blank"></a>
 						<a href="javascript:void(0);" class="icon zoom-icon"></a>
 					</div>
 				</div>
@@ -228,6 +231,40 @@
 					</p>
 					<div class="icons">
 						<a href="https://gitlab.com/TanawatJukmongkol/arduino-pure-c" class="icon link-icon" target="_blank"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="./assets/portfolio/birthday-card-for-my-friend.png">
+					<p>
+						A birthday card for my friend! Written in Processing.js, HTML, and CSS from scratch!
+					</p>
+					<div class="icons">
+						<a href="https://tanawatjukmongkol.github.io/example_site/" class="icon link-icon" target="_blank"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+				<div class="figure">
+					<img src="./assets/portfolio/push-swap.png">
+					<p>
+						I wrote a "push-swap" sorting algorithm visualizer (Tower of Hanoi), in HTML, and made it cross platform!
+					</p>
+					<div class="icons">
+						<a href="https://github.com/TanawatJukmongkol/Algotester-42" class="icon link-icon" target="_blank"></a>
+						<a href="javascript:void(0);" class="icon zoom-icon"></a>
+					</div>
+				</div>
+			</div>
+		</p>
+		<p>
+			<code>$ feh /Pictures/Certs</code>
+			<div class="gallery">
+				<div class="figure">
+					<img src="./assets/portfolio/PetchYodMongkut.webp">
+					<p>
+						Petch Yod Mongkut English competition.
+					</p>
+					<div class="icons">
 						<a href="javascript:void(0);" class="icon zoom-icon"></a>
 					</div>
 				</div>

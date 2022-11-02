@@ -1,5 +1,3 @@
-@import "./theme/dark.css" (prefers-color-scheme: dark);
-/* @import "./theme/light.css" (prefers-color-scheme: dark); */
 
 @font-face {
 	font-family: "Hack";
@@ -108,6 +106,11 @@ tr td:first-child {
 	width: 6rem;
 }
 
+mark {
+	background-color: var(--bkg-color3);
+	color: var(--accent1);
+}
+
 #loading-screen {
 	position: absolute;
 	display: flex;
@@ -121,6 +124,14 @@ tr td:first-child {
 	background-color: var(--bkg-color1);
 	opacity: 1;
 	transition: opacity ease-out .25s;
+}
+
+#nav-menu-btn, #theme-toggle {
+	margin: 0 1rem 0 -2.4rem;
+}
+
+#theme-toggle {
+	float: right;
 }
 
 .menu {
@@ -155,6 +166,8 @@ tr td:first-child {
 	background-size: cover;
 	width: 12em;
 	height: 12em;
+	min-width: 260px;
+	min-height: 260px;
 	clip-path: polygon(0 8%, 30% 100%, 100% 26%);
 }
 
