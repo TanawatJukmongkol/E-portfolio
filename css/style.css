@@ -124,6 +124,7 @@ mark {
 	background-color: var(--bkg-color1);
 	opacity: 1;
 	transition: opacity ease-out .25s;
+	z-index: 1000;
 }
 
 #nav-menu-btn, #theme-toggle {
