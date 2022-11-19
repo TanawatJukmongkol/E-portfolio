@@ -94,7 +94,7 @@ window.addEventListener("load", function() {
 					max-width: unset;
 					z-index: unset;
 					transform: unset;
-				`;	
+				`;
 				description.style.display = "unset";
 				zoom_icons[i].innerHTML = "";
 				return ;
